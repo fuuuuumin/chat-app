@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+}
+
+/*****************************
+サイドバー
+*****************************/
+
+.side_wrapper {
+  width: 300px;
+  height: 100vh;
+}
+
+.side_header {
+  height: 100px;
+  background-color: #253141;
+  padding: 0 20px;
+}
+
+.side_menu {
+  height: calc(100% - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+/*****************************
+メッセージエリア
+*****************************/
+
+.message_wrapper {
+  width: calc(100vw - 300px);
+  height: 100vh;
+}
+
+.message_header {
+  height: 100px;
+  background-color: #ffffff;
+  padding: 0 40px;
+}
+
+.message_main {
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 46px 40px 0 40px;
+}
+
+.message_input {
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
