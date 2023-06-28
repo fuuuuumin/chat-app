@@ -6,20 +6,7 @@
 </div>
 
 <div class="message_main">
-  <div class="message_main_post">
-    <div class="message_main_post_info">
-      <div class="message_main_post_info_username">Tom</div>
-      <div class="message_main_post_info_date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="message_main_post_message">おはよう</div>
-  </div>
-  <div class="message_main_post">
-    <div class="message_main_post_info">
-      <div class="message_main_post_info_username">Tom</div>
-      <div class="message_main_post_info_date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="message_main_post_message">おはよう</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'message_bottom', local: true do |f| %>
@@ -32,3 +19,5 @@
   </div>
   <%= f.submit '送信', class: 'message_bottom_right_button' %>
 <% end %>
+
+
